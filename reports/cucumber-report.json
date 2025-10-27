@@ -1,0 +1,81 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-salesforce-veevart-uat;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 359072750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters valid email and password",
+            "match": {
+              "location": "src/test/steps/loginStep/loginStep.ts:18"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 11774605539,
+              "error_message": "page.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\n    at LoginPage.enterCredentials (/Users/veevart/Desktop/Veevart Automation/src/test/pages/loginPage/LoginPage.ts:25:25)\n    at World.<anonymous> (/Users/veevart/Desktop/Veevart Automation/src/test/steps/loginStep/loginStep.ts:20:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user click in submit",
+            "match": {
+              "location": "src/test/steps/loginStep/loginStep.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user see the dashboard",
+            "match": {
+              "location": "src/test/steps/loginStep/loginStep.ts:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 840999,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at World.<anonymous> (/Users/veevart/Desktop/Veevart Automation/src/test/hooks/hooks.ts:39:48)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-salesforce-veevart-uat",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Salesforce Veevart UAT",
+    "tags": [],
+    "uri": "src/test/features/globals/login/login.feature"
+  }
+]
