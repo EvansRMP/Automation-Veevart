@@ -3,7 +3,7 @@ const report = require("multiple-cucumber-html-reporter");
 report.generate({
     jsonDir: "test-results",
     reportPath: "test-results/reports/",
-    reportName: "Playwright Automation Report",
+    reportName: "Automation Veevart Report",
     pageTitle: "BookCart App test report",
     displayDuration: false,
     metadata: {
@@ -11,10 +11,10 @@ report.generate({
             name: "chrome",
             version: "112",
         },
-        device: "Koushik - PC",
+        device: "Mac M3",
         platform: {
-            name: "Windows",
-            version: "10",
+            name: "Machintosh",
+            version: "Tahoe",
         },
     },
     customData: {

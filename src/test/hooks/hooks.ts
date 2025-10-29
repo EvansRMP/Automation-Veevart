@@ -1,4 +1,4 @@
-import { chromium, Page, Browser, BrowserContext, firefox } from 'playwright';  
+import { chromium, Page, Browser, BrowserContext, firefox, webkit } from 'playwright';  
 import { Before, After, BeforeAll, AfterAll, Status, AfterStep } from '@cucumber/cucumber';  
 import { pageFixture } from '../utils/pageFixture';
  
@@ -12,8 +12,10 @@ BeforeAll( async function() {
         '--disable-blink-features=AutomationControlled',
         '--disable-web-security',
         '--disable-features=IsolateOrigins,site-per-process',
-        '--no-sandbox', 
-        '--disable-setuid-sandbox'
+        '--disable-setuid-sandbox',
+        '--no-sandbox',
+        '--disable-gpu',
+        '--use-angle=metal'
      ] 
     });
 });
@@ -48,4 +50,3 @@ After( async function({ pickle, result }) {
 AfterAll(async function() {
     await context.close();
 });
-

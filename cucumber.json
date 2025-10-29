@@ -13,15 +13,14 @@
         "format": [
             "progress-bar",
             "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "json:reports/cucumber-report.json"
+            "html:reports/cucumber-report.html"
         ],
         "formatOptions": {
             "snippetInterface": "async-await"
         },
         "publishQuiet": true,
         "dryRun": false,
-        "parallel": 0
+        "parallel": 2
         
     }
 }
