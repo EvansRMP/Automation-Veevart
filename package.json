@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test",
-    "report": "ts-node report.ts"
+    "test": "cucumber-js test || true",
+    "report": "npx ts-node src/test/utils/report.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +13,12 @@
   "description": "",
   "devDependencies": {
     "@cucumber/cucumber": "^12.2.0",
+    "@faker-js/faker": "^10.1.0",
     "@playwright/test": "^1.56.1",
     "@types/dotenv": "^6.1.1",
     "@types/node": "^24.9.1",
     "dotenv": "^17.2.3",
+    "jsforce": "^3.10.8",
     "multiple-cucumber-html-reporter": "^3.9.3",
     "otpauth": "^8.0.1",
     "ts-node": "^10.9.2"

@@ -1,8 +1,8 @@
 import { Given, When, Then } from "@cucumber/cucumber";
-import * as dotenv from "dotenv";
 import { pageFixture } from "../../utils/pageFixture";
 import { setDefaultTimeout } from "@cucumber/cucumber";
 import { LoginPage } from "../../pages/loginPage/LoginPage";
+import * as dotenv from "dotenv";
 dotenv.config();
 
 

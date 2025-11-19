@@ -11,16 +11,13 @@
             "src/test/features/**/**/*.feature"
         ],
         "format": [
-            "progress-bar",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html"
+            "progress-bar"
         ],
         "formatOptions": {
             "snippetInterface": "async-await"
         },
         "publishQuiet": true,
         "dryRun": false,
-        "parallel": 2
-        
+        "parallel": 0
     }
 }

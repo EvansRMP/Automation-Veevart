@@ -1,8 +1,11 @@
-import { Page } from '@playwright/test';  
+import { Page, BrowserContext } from '@playwright/test';  
 
-let page: Page;
+export interface PageFixture {
+  page: Page;
+  context: BrowserContext;
+}
 
-export const pageFixture = {
-  // @ts-ignore
-  page: undefined as Page
+export const pageFixture: PageFixture = {
+  page: undefined as unknown as Page,
+  context: undefined as unknown as BrowserContext
 }  

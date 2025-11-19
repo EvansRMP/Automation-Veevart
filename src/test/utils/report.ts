@@ -2,13 +2,13 @@ const report = require("multiple-cucumber-html-reporter");
 
 report.generate({
     jsonDir: "test-results",
-    reportPath: "test-results/reports/",
+    reportPath: "./",
     reportName: "Automation Veevart Report",
-    pageTitle: "BookCart App test report",
-    displayDuration: false,
+    pageTitle: "Regression Report Veevart",
+    displayDuration: true,
     metadata: {
         browser: {
-            name: "chrome",
+            name: "chromium, WebKit, Firefox",
             version: "112",
         },
         device: "Mac M3",
@@ -20,8 +20,8 @@ report.generate({
     customData: {
         title: "Test Info",
         data: [
-            { label: "Project", value: "Book Cart Application" },
-            { label: "Release", value: "1.2.3" },
+            { label: "Project", value: "Veevart Qa automation" },
+            { label: "Release", value: "UAT" },
             { label: "Cycle", value: "Smoke-1" }
         ],
     },
