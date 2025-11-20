@@ -8,6 +8,10 @@ export class EventLocators {
         inputEventName: Locator;
         saveButton: Locator;
         eventNameTitle: string;
+        buttonSelectOptions: Locator;
+        selecOptionDelete: Locator;
+        confirmDeleteButton: Locator;
+        
 
     constructor(page: Page) {
         this.page = page;
@@ -16,6 +20,9 @@ export class EventLocators {
         this.inputEventName = page.getByRole('textbox', { name: 'Exposition' });
         this.saveButton = page.locator("(//li[@class='slds-button-group-item visible']//button)[3]");
         this.eventNameTitle = "//slot[contains(@class,'slds-page-header__title slds-m-right--small')]//lightning-formatted-text[1]";
+        this.buttonSelectOptions = page.getByRole('button', { name: 'Show more actions' });
+        this.selecOptionDelete = page.locator("//span[normalize-space(text())='Delete']");
+        this.confirmDeleteButton = page.getByRole('button', { name: 'Delete' });
     }
 }
 

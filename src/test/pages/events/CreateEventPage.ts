@@ -25,5 +25,12 @@ export class CreateEventPage {
     async getEventNameTitle(): Promise<string> {
         return await this.page.locator(this.locators.eventNameTitle).innerText();
     }
+
+    async deleteEvent() {
+        await this.locators.buttonSelectOptions.click();
+        await this.locators.selecOptionDelete.click();
+        await this.locators.confirmDeleteButton.click();
+        await this.page.waitForTimeout(5000);  
+    }
             
 }  

@@ -24,4 +24,10 @@ import { expect } from "@playwright/test";
         const displayedName = await createEventPage.getEventNameTitle();
         await pageFixture.page.waitForTimeout(5000);
         expect(displayedName).toBe(eventNameTitle);
+        console.log("Created Event Name: " + displayedName);
+    });
+
+    Then('user delete the created event', async function () {
+        await createEventPage.deleteEvent();
+        console.log("Deleted Event Name: " + eventNameTitle);
     });
