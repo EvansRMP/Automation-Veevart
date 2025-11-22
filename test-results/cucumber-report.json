@@ -1,0 +1,136 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "create-a-new-exhibition-and-event`;create-a-new-exhibition-and-event",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Create a new Exhibition and Event",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 511613125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src/test/steps/loginStep/loginStep.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1122195499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid email and password",
+            "match": {
+              "location": "src/test/steps/loginStep/loginStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 986546249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user click in submit",
+            "match": {
+              "location": "src/test/steps/loginStep/loginStep.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1924142541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "A user click on Exhibitions & Events",
+            "match": {
+              "location": "src/test/steps/createEvent/createEventStep.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5171296959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user create new event",
+            "match": {
+              "location": "src/test/steps/createEvent/createEventStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5980489082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user should see the event title",
+            "match": {
+              "location": "src/test/steps/createEvent/createEventStep.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6302354999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user delete the created event",
+            "match": {
+              "location": "src/test/steps/createEvent/createEventStep.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5891185165
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52777416
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@event",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-a-new-exhibition-and-event`",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Create a new Exhibition and Event`",
+    "tags": [],
+    "uri": "src/test/features/events/createEvent.feature"
+  }
+]
